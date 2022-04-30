@@ -32,3 +32,6 @@ Run Heroku Locally (optionally for windows since doesn't support gunicorn)
 heroku local
 heroku local -f Procfile.windows
 ```
+## DJANGO
+Start the django live reload server in a separate terminal window and leave it running.
+```python manage.py livereload```

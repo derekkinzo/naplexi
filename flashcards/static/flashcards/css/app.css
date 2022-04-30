@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --color-2:#f6f7fa;
+    --color-3:#E3E6E8;
+    --color-4:#f6f0e9;
+    --color-5:#242325;
+    --color-6:#415A77;
+    --color-7:#C2DFE3;
+    --color-8:#e3c2c2;
+    --color-7-light:#baeaf185;
+}
+
+.my-wrap{
+    background: var(--color-2);
+    background: url('../img/bg-cards.png')  no-repeat center center/cover;
+}
+
+.my-card{
+    background-color: #fff;
+    background-color: var(--color-2);
+    box-shadow:  0 6px 30px -2px rgba(0, 0, 0, 0.1);
+    /* border-right: 1px solid var(--color-6); */
+}
+.flashcards{
+    background: #fff;
+    border-radius: 15px;  
+    border: none;
+    /* box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.25), -10px -10px 16px rgba(255, 255, 255, 0.25) ; */
+    transition: all 250ms ease-in;
+    padding: 10px;
+    min-height: 250px;
+}
+
+.flashcards:hover{
+    box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translate(0px, -10px);
+    -ms-transform: translate(0px, -10px);
+    transform: translate(0px, -10x)
+}
+
+.flashcards .card-header{
+    background: #fff;
+    border-bottom: 0.5px solid var(--color-6);
+}
+
+.flashcards .card-footer{
+    /* border: none; */
+    background: #fff;
+    border-top: 0.5px solid var(--color-6);
+    padding: 0;
+}
+
+.card-info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+}
+
+.card-body{
+    margin-top: 1rem;    
+    margin-bottom: 1rem;    
+}
+
+.card-info .view-times{
+    display: inline-block;
+    width: 50%;
+    background-color: var(--color-7-light);
+    padding: 0.5rem;
+    border-right: 0.5px solid var(--color-6);
+    /* font-size: 1.1rem; */
+    font-family: 'B612', sans-serif;
+}
+
+.card-info .etched-or-not{
+    display: inline-block;
+    width: 50%;
+    background-color: var(--color-7-light);
+    padding: 0.5rem; 
+    /* font-size: 1.1rem; */
+    font-family: 'B612', sans-serif;
+}
+
+.open-card{
+    padding: 0.5rem;
+}
+
+.open{
+    color: var(--color-6);
+    transition: all 100ms ease-out;
+    text-decoration: none;
+}
+
+.open:hover{
+    border-bottom: 2px solid var(--color-6);
+    color: var(--color-6);
+    text-decoration: none;
+}

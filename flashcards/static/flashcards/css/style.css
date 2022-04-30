@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+:root{
+    --light-color: #f1f1f2;
+    --color-1: #a1d6e2;
+    --color-4: #1995ad;
+    --color-5: #101011;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif ;
+    background: #333;
+    color: var(--light-color);
+    line-height: 1.6;
+    height: 100vh;
+}
+
+body#bg-img {
+    background: url('../img/bg4.jpg') no-repeat center center/cover;
+}
+
+body#bg-img:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(68, 68, 68, 0.8);
+    z-index: -1; }
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar1{
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: var(--color-5);
+}
+
+.navbar1 ul{
+    font-weight: 400;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar1 ul li{
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.navbar1 ul li a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--light-color);
+}
+
+.navbar1 ul li a:hover {
+    color: var(--color-4);
+}
+
+.sec-text{
+    color: var(--color-1);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+h1, h2{
+    margin: 0;
+    font-weight: 400;
+}
+
+h1.lg-heading{
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+h2.sm-heading{
+    padding: 0.2rem 1rem;
+    font-size: 2rem;
+    background: rgba(73, 73, 73, 0.5);
+}
+
+/*Laptops*/
+@media screen and (max-width:1280px) {
+    h1.lg-heading {
+        line-height: 1;
+        margin-bottom: 1rem;
+        font-size: 4.5rem;
+    }
+
+    h2.sm-heading{
+        font-size: 2rem;
+    }
+}
+
+/*Mobile Phones in Landscape*/
+@media screen and (max-width: 768px) {
+    h1.lg-heading {
+        line-height: 1;
+        margin-bottom: 1rem;
+        font-size: 4rem;
+    }
+
+    h2.sm-heading{
+        font-size: 1.5rem;
+    }
+}
+
+/*Mobile Phones*/
+@media screen and (max-width: 480px) {
+    h1.lg-heading {
+        margin-top: 1rem;
+        font-size: 3rem;
+    }
+
+    h2.sm-heading{
+        font-size: 1rem;
+    }
+
+    .navbar1 ul li a{
+        font-size: 1rem;
+    }
+}
+
