@@ -22,3 +22,13 @@ Login to account
 
 Create heroku app project
 ```heroku create naplexi```
+
+
+Push to heroku repo
+```git push heroku main```
+
+Run Heroku Locally (optionally for windows since doesn't support gunicorn)
+```
+heroku local
+heroku local -f Procfile.windows
+```
