@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-dd1m(-id(c-b3*u2)y5l*a4dw&xvcx69tk!k-tlo4yvxa4y7tw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['naplexi.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['naplexi.herokuapp.com', 'naplexi.com', 'www.naplexi.com', '127.0.0.1']
 
 
 # Application definition
