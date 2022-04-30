@@ -11,3 +11,14 @@ Update virtual environment yml
 
 Remove virtual environment
 ``` conda env remove -n naplexi ```
+
+
+## Heroku
+
+Login to account
+
+```heroku login```
+
+
+Create heroku app project
+```heroku create naplexi```
