@@ -108,7 +108,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = SETTINGS_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# Extra places to find static files
+STATICFILES_DIRS = (
+    (SETTINGS_DIR / 'static'),
+)
+
+# Simplified static file serving.
+# https://warehouse.python.org/project/whitenoise/
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
