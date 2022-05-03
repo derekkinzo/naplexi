@@ -5,7 +5,7 @@ import dj_database_url
 import django_heroku
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['naplexi.herokuapp.com',  'www.naplexi.com']
 
